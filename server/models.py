@@ -12,4 +12,5 @@ class Plant(db.Model, SerializerMixin):
     price = db.Column(db.Float)
     is_in_stock = db.Column(db.Boolean, default=True)
 
-    serialize_rules = ('-id',)  # Optional: change as needed
+    # Remove this line:
+    # serialize_rules = ('-id',)
